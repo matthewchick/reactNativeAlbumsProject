@@ -8,9 +8,12 @@ import React from 'react';
 import { Text, AppRegistry } from 'react-native'; //deconstruct
 
 // Create a Component
-/* const App = () => {
+/* const App = () => {      javacript es6
   return <Text>Some Text</Text>;
 };
+const App = function App() {    javascript
+  return <Text>Some Text</Text>;
+}
 */
 // functional or non-stateless components
 const App = () => <Text>Some Text</Text>;

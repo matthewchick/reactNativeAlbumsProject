@@ -6,7 +6,7 @@ AppRegistry.registerComponent('album', () => App); */
 // It is a root component
 // Import a library to help create a Component
 import React from 'react';
-import { Text, AppRegistry } from 'react-native'; //deconstruct
+import { AppRegistry } from 'react-native'; //deconstruct
 import Header from './src/components/header';
 
 // Create a Component
@@ -18,7 +18,7 @@ const App = function App() {    javascript
 }
 */
 // functional or non-stateless components
-const App = () => <Text>Some Text</Text>;
+const App = () => <Header />;
 
 // Render it to the device
 // Only root component uses 'AppRegistry'

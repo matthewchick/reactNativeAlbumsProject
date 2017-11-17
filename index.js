@@ -12,6 +12,7 @@ import { Text, AppRegistry } from 'react-native'; //deconstruct
   return <Text>Some Text</Text>;
 };
 */
+// functional or non-stateless components
 const App = () => <Text>Some Text</Text>;
 
 // Render it to the device

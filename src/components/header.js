@@ -1,13 +1,28 @@
 // header is child component
 // import library for making a component
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 // Make a component
 const Header = () => {
-  return <Text>Albums</Text>;
+  //const textStyle = styles.textStyle;
+  const { textStyle, viewStyle } = styles;   //destructuring
+
+  return (
+    <View style={viewStyle}>
+      <Text style={textStyle}>Albums</Text>
+    </View>
+  );
 };
 
+const styles = {
+  viewStyle: {
+    backgroundColor: '#F8F8F8'
+  },
+  textStyle: {
+    fontSize: 20
+  }
+};
 // Make the component available to other parts of the app
 // the presence of that 'default' keyword affects the code that
 // you'll write when you try to 'import' it somewhere else.

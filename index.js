@@ -4,7 +4,7 @@ import App from './App';
 
 AppRegistry.registerComponent('album', () => App);
 */
-// It is a root component
+// It is a root/parent component
 // Import a library to help create a Component
 import React from 'react';
 import { AppRegistry } from 'react-native'; //deconstruct
@@ -20,7 +20,7 @@ const App = function App() {    javascript
 }
 */
 // functional or non-stateless components
-const App = () => <Header />;
+const App = () => <Header headerText={'Albums'} />; //use props to pass data from parent to child component
 
 // Render it to the device
 // Only root component uses 'AppRegistry'

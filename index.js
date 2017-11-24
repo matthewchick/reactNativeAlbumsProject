@@ -21,9 +21,10 @@ const App = function App() {    javascript
 }
 */
 // functional or non-stateless components
+// use props to pass data from parent to child component
 const App = () => (
   <View>
-    <Header headerText={'Albums'} /> //use props to pass data from parent to child component
+    <Header headerText={'Albums'} />
     <AlbumList />
   </View>
 );

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import axios from 'axios';
+import AlbumDetail from './AlbumDetail';
 
 /* functional Component
 const AlbumList = () => {
@@ -24,7 +25,7 @@ class AlbumList extends Component {
   //map() is similar to forEach function
   renderAlbums() {
     return this.state.albums.map(album =>
-      <Text key={album.title}>{album.title}</Text>
+      <AlbumDetail key={album.title} albumdata={album} />
     );
   }
 

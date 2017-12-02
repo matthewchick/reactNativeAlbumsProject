@@ -16,7 +16,7 @@ import AlbumList from './src/components/AlbumList';
 /* const App = () => {      javacript es6
   return <Text>Some Text</Text>;
 };
-const App = function App() {    javascript
+const App = function() {    javascript
   return <Text>Some Text</Text>;
 }
 */

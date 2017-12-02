@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { View } from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
-
 /* functional Component
 const AlbumList = () => {
   return (
@@ -15,7 +14,6 @@ const AlbumList = () => {
 // class Component
 class AlbumList extends Component {
   state = { albums: [] };     //step 1: array of emptyObject
-
   //lifecycle -> https://reactjs.org/docs/react-component.html
   componentWillMount() {
     console.log('componentWillMount in AlbumList');
@@ -23,12 +21,12 @@ class AlbumList extends Component {
     .then(response => this.setState({ albums: response.data }));
   }
   //map() is similar to forEach function
+  //pass each album object to AlbumDetail.js
   renderAlbums() {
     return this.state.albums.map(album =>
       <AlbumDetail key={album.title} albumdata={album} />
     );
   }
-
   render() {
     console.log('State: ', this.state);
 
@@ -39,5 +37,4 @@ class AlbumList extends Component {
     );
   }
 }
-
 export default AlbumList;

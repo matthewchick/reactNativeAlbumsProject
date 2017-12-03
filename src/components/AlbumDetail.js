@@ -2,6 +2,7 @@ import React from 'react';
 import { Text } from 'react-native';
 import Card from './Card';
 
+// pass props.albumdata.title into Card
 const AlbumDetail = (props) => {
  return (
    <Card>

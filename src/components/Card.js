@@ -1,6 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 
+// props.children uses <Text>{props.albumdata.title}</Text> from AlbumDetail
 const Card = (props) => {
   return (
     <View style={styles.containerStyle}>

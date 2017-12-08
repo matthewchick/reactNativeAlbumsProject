@@ -5,16 +5,18 @@ import CardSection from './CardSection'
 // pass props.albumdata.title into Card
 const AlbumDetail = ({albumdata}) => {
    const { title, artist, thumbnail_image } = albumdata;
+   const { thumbnailStyle, headerContentStyle } = styles;
+
    return (
      <Card>
        <CardSection>
        <View>
           <Image
-            style={styles.thumbnailStyle}
+            style={thumbnailStyle}
             source={{ uri: thumbnail_image }}
           />
        </View>
-       <View style={styles.headerContentStyle}>
+       <View style={headerContentStyle}>
           <Text>{title}</Text>
           <Text>{artist}</Text>
        </View>

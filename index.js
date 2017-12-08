@@ -6,6 +6,7 @@ AppRegistry.registerComponent('album', () => App);
 */
 // It is a root/parent component
 // Import a library to help create a Component
+// https://nativebase.io/
 import React from 'react';
 import { AppRegistry, View } from 'react-native'; //deconstruct
 import Header from './src/components/header';

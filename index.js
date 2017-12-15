@@ -23,8 +23,9 @@ const App = function() {    javascript
 */
 // functional or non-stateless components
 // use props to pass data from parent to child component
+// https://facebook.github.io/react-native/docs/flexbox.html
 const App = () => (
-  <View>
+  <View style={{ flex: 1 }}>
     <Header headerText={'Albums'} />
     <AlbumList />
   </View>
